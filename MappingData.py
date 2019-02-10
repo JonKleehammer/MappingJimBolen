@@ -23,6 +23,7 @@ def map_data(data):
         else:
             processed_data[key] = 1
 
+    # creating empty arrays to put the data into a coordinate system
     x_data = []
     y_data = []
     z_data = []
@@ -44,11 +45,13 @@ def map_data(data):
     dy = np.ones(processed_data_size) * 2.5
     dz = z_data
 
+    # labelling the axes
     ax.set_xlabel('Guesses')
     ax.set_ylabel('Scores')
     ax.set_zlabel('Frequency')
 
+
     ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color='#00ceaa')
     plot.show()
 
-    print 'done'
+    print('done')

@@ -40,8 +40,7 @@ for t in range(0, test_count):
 # finally calculating the aerage
 test_avg = test_sum / test_count
 
-print '\n({} Tests taken) (Average score: {}) (Best score: {}) (Worst score: {})'.format(test.test_count, test_avg, best_score, worst_score)
+print("\n({} Tests Taken) (Average Score: {}) (Best Score: {}) (Worst Score: {})".format(test_count, test_avg, best_score, worst_score))
 
 # calling the map_data method from the mappingdata file
 MappingData.map_data(test_data)
-
